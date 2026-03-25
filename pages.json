@@ -34,6 +34,14 @@
 			"navigationBarTextStyle": "black"
 		}
 
+	}, {
+		"path": "pages/agent/agent",
+		"style": {
+			"navigationBarTitleText": "智能体网页",
+			"navigationBarBackgroundColor": "#2563eb",
+			"navigationBarTextStyle": "white"
+		}
+
 	}],
 	"globalStyle": {
 		"navigationBarTextStyle": "white",
