@@ -52,3 +52,30 @@
 <img src="images/2551610871203_.pic_hd.jpg" alt="2551610871203_.pic_hd" style="zoom:20%;" />
 
 <img src="images/2561610871204_.pic_hd.jpg" alt="2561610871204_.pic_hd" style="zoom:20%;" />
+
+---
+
+## 新增：智能体页面如何预览
+
+你问的“怎么预览”，最直接有两种方式：
+
+### 方式 1：HBuilderX（推荐）
+
+1. 用 HBuilderX 打开本项目目录 `leave-school`。  
+2. 顶部菜单选择 **运行 -> 运行到浏览器 -> Chrome**（或其他浏览器）。  
+3. 启动后访问智能体页面路由：`/pages/agent/agent`。  
+4. 在页面里填入你的 `API 地址 / API Key / 模型名` 后即可测试对话。
+
+### 方式 2：直接打开已构建 H5 产物（快速查看）
+
+仓库里已存在构建目录：`unpackage/dist/build/h5/`。  
+如果只是看界面，可用本地静态服务指向这个目录进行预览。
+
+示例（Python）：
+
+```bash
+cd unpackage/dist/build/h5
+python3 -m http.server 8080
+```
+
+然后浏览器打开：`http://127.0.0.1:8080`，再进入对应页面路径进行查看。
